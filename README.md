@@ -5,6 +5,8 @@ Laravel 11 starter application
 - [FilamentPHP](https://filamentphp.com/docs/3.x/panels/installation)
 - [SocialStream](https://docs.socialstream.dev/)
 - [Spatie Permissions](https://spatie.be/docs/laravel-permission/v6/introduction)
+- [Laravel-Debugbar](https://github.com/barryvdh/laravel-debugbar?tab=readme-ov-file)
+- [Laravel Folio](https://laravel.com/docs/11.x/folio)
 
 ## License
 
