@@ -7,8 +7,9 @@ return [
     'guard' => 'web', // used if Fortify is not installed
     'middleware' => ['web'],
     'prompt' => 'Or Login Via',
+    `prefix` => 'login',
     'providers' => [
-        // Providers::github(),
+        Providers::github(),
     ],
     'features' => [
         // Features::generateMissingEmails(),

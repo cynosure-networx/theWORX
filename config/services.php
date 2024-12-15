@@ -34,5 +34,10 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'github' => [
+        'client_id' => 'e7a2638a3f766ce83654',
+        'client_secret' => '4dba3dcd610d540acaeb823d7a99c49abfb93f23',
+        'redirect' => '/oauth/github/callback',
+    ],
 
 ];

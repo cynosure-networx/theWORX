@@ -1,10 +1,10 @@
 ## About theWORX
 
 Laravel 11 starter application
-- Inertia JS with VUE 3
-- Spatie Permissions
-- Filament PHP
-- Jetstream
+- [Jetstream - Inertia JS / VUE 3](https://jetstream.laravel.com/introduction.html)
+- [FilamentPHP](https://filamentphp.com/docs/3.x/panels/installation)
+- [SocialStream](https://docs.socialstream.dev/)
+- [Spatie Permissions](https://spatie.be/docs/laravel-permission/v6/introduction)
 
 ## License
 
