@@ -35,9 +35,9 @@ return [
         ],
     ],
     'github' => [
-        'client_id' => 'e7a2638a3f766ce83654',
-        'client_secret' => '4dba3dcd610d540acaeb823d7a99c49abfb93f23',
-        'redirect' => '/oauth/github/callback',
+        'client_id' => env('GITHUB_CLIENT'),
+        'client_secret' => env('GITHUB_SECRET_KEY'),
+        'redirect' => env('GITHUB_REDIRECT'),
     ],
 
 ];
