@@ -62,18 +62,4 @@ class TelescopeServiceProvider extends TelescopeApplicationServiceProvider
         });
     }
 
-    /**
- * Configure the Telescope authorization services.
- *
- * @return void
- */
- protected function authorization()
- {
-    $this->gate();
-
-    Telescope::auth(function ($request) {
-        return app()->environment(['local', 'staging']) ||
-        Gate::check('viewTelescope', [$request->user()]);
-    });
- }
 }
