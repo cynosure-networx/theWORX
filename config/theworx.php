@@ -1,10 +1,6 @@
 <?php
 
 return [
-<<<<<<< HEAD
-    'company' => 'CodeWorx Labs',
-];
-=======
     'company' => 'CodeWorxLabs',
     'website-name' => 'theWORX',
     'copyright-start' => '2019',
@@ -15,4 +11,3 @@ return [
     'initial-user-last-name' => 'Doe',
     'initial-user-email' => 'john.doe@codeworxlabs.com',
 ];
->>>>>>> 4b6ceb2 (added config theworx file, updated .env.example and Welcome.vue)
