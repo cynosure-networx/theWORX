@@ -10,13 +10,13 @@ Laravel 11 starter application
 - [Spatie Backup](https://spatie.be/docs/laravel-backup/v8/introduction)
 - [Spatie Sitemap](https://github.com/spatie/laravel-sitemap)
 - [Telescope](https://laravel.com/docs/11.x/telescope)
+- [Scout](https://laravel.com/docs/11.x/scout)
+- [Cashier (Stripe)](https://laravel.com/docs/11.x/billing)
+- [Laravel-Breadcrumbs](https://github.com/diglactic/laravel-breadcrumbs)
 
 Possible Installs
-- [Laravel-Breadcrumbs](https://github.com/diglactic/laravel-breadcrumbs) - To install
-- [Cashier]() - To install
-- [Scout]() - To install
-- [Larastan]() - To install
-- [Pint]() - To install
+- [Larastan]() - To install?? IDE does this
+- [Pint]() - To install?? IDE does this
 - [Laravel IDE Helper]() - To install
 - [Passport or Sanctum]() - To install
 

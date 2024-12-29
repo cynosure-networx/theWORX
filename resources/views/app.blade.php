@@ -16,6 +16,9 @@
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
+        {{-- resources/views/app.blade.php --}}
+
+        {{-- {{ Breadcrumbs::render() }} --}}
         @inertia
-    </body>
+    </b ody>
 </html>
