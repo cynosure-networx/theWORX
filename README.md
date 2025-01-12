@@ -13,12 +13,11 @@ Laravel 11 starter application
 - [Scout](https://laravel.com/docs/11.x/scout)
 - [Cashier (Stripe)](https://laravel.com/docs/11.x/billing)
 - [Laravel-Breadcrumbs](https://github.com/diglactic/laravel-breadcrumbs)
+- [Laravel IDE Helper](https://github.com/barryvdh/laravel-ide-helper)
+- [Pint](https://laravel.com/docs/11.x/pint) - Pre-installed
 
 Possible Installs
-- [Larastan]() - To install?? IDE does this
-- [Pint]() - To install?? IDE does this
-- [Laravel IDE Helper]() - To install
-- [Passport or Sanctum]() - To install
+- [Passport or Sanctum](https://laravel.com/docs/11.x/passport#passport-or-sanctum) - Depends on auth method should be installed as needed.
 
 ## License
 
