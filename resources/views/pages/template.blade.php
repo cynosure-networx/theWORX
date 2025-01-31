@@ -1,5 +1,5 @@
 {{-- resources\views\template.blade.php --}}
-<x-theworx-layout>
+@extends('layouts/theworx')
 
     @section('metaTitle', 'Template')
 
@@ -26,7 +26,7 @@
     @section('bodyStyles', '')
 
     @section('pageTitle')
-        <x-mary-header title="Features" subtitle="theWORX Features" separator />
+        {{-- <x-mary-header title="Features" subtitle="theWORX Features" separator /> --}}
     @endsection
 
     @section('modals')
@@ -38,7 +38,7 @@
     @endpush
 
     {{-- Page Content goes here --}}
-    {{-- <x-slot:content> --}}
+@section('contents')
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col">
@@ -90,6 +90,4 @@
             </div>
         </div>
     </section>
-        {{-- <x-slot /> --}}
-
-</x-theworx-layout>
+@endsection

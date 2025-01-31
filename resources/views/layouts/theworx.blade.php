@@ -49,7 +49,7 @@
 {{-- NAVBAR mobile only --}}
 @include('layouts.includes.header')
 
-{{ $slot }}
+@yield('contents')
 
 @include('layouts.includes.footer')
 
