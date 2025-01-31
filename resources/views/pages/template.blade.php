@@ -6,7 +6,7 @@
     @section('pageMeta')
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="author" content="The Dev Team">
+    <meta name="author" content="Code Worx Labs">
     <meta name="robots" content="index, follow">
     @endsection
 
