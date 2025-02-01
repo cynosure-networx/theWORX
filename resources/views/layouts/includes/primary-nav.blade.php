@@ -8,7 +8,7 @@
                     <a class="menu-link" href="{{ route('template') }}"><div>Template</div></a>
                 </li>
                 <li class="menu-item">
-                    <a class="menu-link" href="onepage-demos.html"><div>One-Page Demos</div></a>
+                    <a class="menu-link" href="onepage-demos.html"><div>Edit Test</div></a>
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="blocks.html"><div>Blocks</div></a>
