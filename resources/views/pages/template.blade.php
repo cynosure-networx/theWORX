@@ -1,4 +1,13 @@
 {{-- resources\views\template.blade.php --}}
+
+<?php
+
+use function Laravel\Folio\name;
+
+name('template');
+
+?>
+
 @extends('layouts/theworx')
 
 @section('metaTitle', 'Template')
@@ -49,7 +58,7 @@
                 <div class="swiper-slide dark">
                     <div class="container">
                         <div class="slider-caption slider-caption-center">
-                            <h2 data-animate="fadeInUp">Welcome to Canvas</h2>
+                            <h2 data-animate="fadeInUp">Welcome to theWORX</h2>
                             <p class="d-none d-sm-block" data-animate="fadeInUp" data-delay="200">Create just what you need for your Perfect Website. Choose from a wide range of Elements &amp; simply put them on your own Canvas.</p>
                         </div>
                     </div>
@@ -587,7 +596,7 @@
 
         </div>
 
-        <a href="portfolio.html" class="button button-full button-dark text-center text-end mb-6">
+        <a href="portfolio.html" class="button button-full button-dark text-center mb-6">
             <div class="container">
                 More than 100+ predefined Portfolio Grid Layouts. <strong>See More</strong> <i class="fa-solid fa-caret-right" style="top:4px;"></i>
             </div>
