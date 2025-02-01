@@ -5,7 +5,7 @@
             <a class="menu-link" href="index.html"><div>Home</div></a>
             <ul class="sub-menu-container">
                 <li class="menu-item">
-                    <a class="menu-link" href="niche-demos.html"><div>Niche Demos</div></a>
+                    <a class="menu-link" href="{{ route('template') }}"><div>Template</div></a>
                 </li>
                 <li class="menu-item">
                     <a class="menu-link" href="onepage-demos.html"><div>One-Page Demos</div></a>
