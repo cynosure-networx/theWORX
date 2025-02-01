@@ -9,8 +9,8 @@
                 ============================================= -->
                 <div id="logo">
                     <a href="{{ route('home') }}">
-                        <img class="logo-default" srcset="images/logo.png, images/logo@2x.png 2x" src="images/logo@2x.png" alt="Canvas Logo">
-                        <img class="logo-dark" srcset="images/logo-dark.png, images/logo-dark@2x.png 2x" src="images/logo-dark@2x.png" alt="Canvas Logo">
+                        <img class="logo-default" srcset="images/template/logo.png, images/template/logo@2x.png 2x" src="images/template/logo@2x.png" alt="Canvas Logo">
+                        <img class="logo-dark" srcset="images/template/logo-dark.png, images/template/logo-dark@2x.png 2x" src="images/template/logo-dark@2x.png" alt="Canvas Logo">
                     </a>
                 </div><!-- #logo end -->
 
@@ -33,7 +33,7 @@
                             <div class="top-cart-items">
                                 <div class="top-cart-item">
                                     <div class="top-cart-item-image">
-                                        <a href="#"><img src="images/shop/small/1.jpg" alt="Blue Round-Neck Tshirt"></a>
+                                        <a href="#"><img src="images/template/shop/small/1.jpg" alt="Blue Round-Neck Tshirt"></a>
                                     </div>
                                     <div class="top-cart-item-desc">
                                         <div class="top-cart-item-desc-title">
@@ -45,7 +45,7 @@
                                 </div>
                                 <div class="top-cart-item">
                                     <div class="top-cart-item-image">
-                                        <a href="#"><img src="images/shop/small/6.jpg" alt="Light Blue Denim Dress"></a>
+                                        <a href="#"><img src="images/template/shop/small/6.jpg" alt="Light Blue Denim Dress"></a>
                                     </div>
                                     <div class="top-cart-item-desc">
                                         <div class="top-cart-item-desc-title">
