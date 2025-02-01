@@ -1,66 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
-<head>
+        @yield('pageMeta')
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        <!-- Font Imports -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
+        @yield('pageFonts')
 
-    <title>{{ config('theworx.website-name') }}
-        @hasSection('metaTitle')
-        - @yield('metaTitle')
-        @endif
-    </title>
+        <!-- Styles -->
+        <!-- Core Style -->
+        <link rel="stylesheet" href="{{ asset('css/template/style.css') }}" />
 
-    @yield('pageMeta')
+        <!-- Font Icons -->
+        <link rel="stylesheet" href="{{ asset('css/template/font-icons.css') }}" />
 
-    <!-- Font Imports -->
-    @yield('pageFonts')
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="{{ asset('css/template/swiper.css') }}" />
 
-    <!-- Styles -->
-    @vite('resources/css/app.css')
 
-    {{-- <link rel="stylesheet" href="build/assets/app-C7j5xxXb.css"> --}}
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{{ asset('css/template/custom.css') }}" />
 
-    @yield('pageStyles')
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <meta property="og:image:alt" content="">
+        @yield('pageStyles')
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="icon.png">
+        <meta property="og:title" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:alt" content="" />
 
-    <link rel="manifest" href="site.webmanifest" crossorigin="use-credentials">
-    <meta name="theme-color" content="#ff6600">
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="icon.png" />
 
-    @yield('headScripts')
+        <meta name="theme-color" content="#1d9eeb;
+" />
 
-    @livewireStyles
+        <title>
+            {{ config('theworx.website-name') }} @hasSection('metaTitle') - @yield('metaTitle')
+            @endif
+        </title>
 
-</head>
+        @yield('headScripts')
+    </head>
 
-<body class="" min-h-screen font-sans antialiased bg-base-200/50 dark:bg-base-200">
-{{-- NAVBAR mobile only --}}
-@include('layouts.includes.header')
+    <body class="stretched">
+        <!-- Document Wrapper
+	    ============================================= -->
+        <div id="wrapper">
+            {{-- @include('layouts.includes.topbar') --}}
 
-@yield('contents')
+            @include('layouts.includes.header')
 
-@include('layouts.includes.footer')
+            @hasSection('pageTitle')
+                @include('layouts.partials.page-title')
+            @endif
 
-@yield('footerScripts')
+            <!-- Content
+            ============================================= -->
 
-@vite('resources/js/app.js')
+            {{-- @include('layouts.partials.breaking-news') --}}
 
-{{-- <link rel="scripts" href="build/assets/app-C1-XIpUa.js"> --}}
+            {{-- {{ $slot }} --}}
 
-@livewireScripts
+            @yield('content')
 
-</body>
+            <!-- #content end -->
 
+            @include('layouts.includes.footer')
+
+        </div>
+        <!-- Wrapper end -->
+
+        <!-- Go To Top
+	============================================= -->
+        <div id="gotoTop" class="uil uil-angle-up"></div>
+
+        <!-- JavaScripts
+	============================================= -->
+        <script src="{{ asset('js/template/plugins.min.js') }}"></script>
+        <script src="{{ asset('js/template/functions.bundle.js') }}"></script>
+
+        @yield('footerScripts')
+    </body>
 </html>
