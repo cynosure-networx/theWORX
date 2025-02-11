@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import 'template/style.css';
+@import 'template/font-icons.css';
+@import 'template/swiper.css';
+@import 'template/custom.css'; */
+
 [x-cloak] {
     display: none;
 }

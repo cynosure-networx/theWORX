@@ -16,17 +16,19 @@
 
         <!-- Styles -->
         <!-- Core Style -->
-        <link rel="stylesheet" href="{{ asset('css/template/style.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('css/template/style.css') }}" /> --}}
 
         <!-- Font Icons -->
-        <link rel="stylesheet" href="{{ asset('css/template/font-icons.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('css/template/font-icons.css') }}" /> --}}
 
         <!-- Swiper CSS -->
-        <link rel="stylesheet" href="{{ asset('css/template/swiper.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('css/template/swiper.css') }}" /> --}}
 
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="{{ asset('css/template/custom.css') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('css/template/custom.css') }}" /> --}}
+
+        @vite('resouces/css/app.css', 'resources/js/app.js')
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -87,8 +89,8 @@
 
         <!-- JavaScripts
 	============================================= -->
-        <script src="{{ asset('js/template/plugins.min.js') }}"></script>
-        <script src="{{ asset('js/template/functions.bundle.js') }}"></script>
+        {{-- <script src="{{ asset('js/template/plugins.min.js') }}"></script> --}}
+        {{-- <script src="{{ asset('js/template/functions.bundle.js') }}"></script> --}}
 
         @yield('footerScripts')
     </body>
