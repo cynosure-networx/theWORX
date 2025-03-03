@@ -29,6 +29,13 @@
 
 theWORX on Laravel Cloud [https://theworx-main-7yxb7l.laravel.cloud/]
 
+- Project contains the following:
+- Laravel 12
+- Vue
+- WorkOS
+- testing with PHPUnit
+- Tailwind with [Shadcn/vue](https://www.shadcn-vue.com/)
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
